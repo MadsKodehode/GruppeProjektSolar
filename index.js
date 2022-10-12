@@ -5,6 +5,7 @@ const bar3 = document.querySelector(".menu-bar3");
 const navMenu = document.getElementById("nav-wrap");
 const mainNav = document.querySelector(".main-nav");
 const mainHeader = document.querySelector(".main-header");
+const heroImg = document.querySelector(".hero");
 
 function changeFunction() {
   bar1.classList.toggle("transform");
