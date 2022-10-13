@@ -205,6 +205,24 @@ main {
 .data-paragraph {
   font-size: 13px;
 }
+.btn-wrap {
+  text-align: center;
+  width: 100%;
+  margin: 100px auto;
+}
+#btn {
+  border: none;
+  border-radius: 20px;
+  background: #002751;
+  padding: 20px;
+  width: 100px;
+  cursor: pointer;
+  color: #f4f4f4;
+}
+
+#btn:hover {
+  background: #003f82;
+}
 
 @media only screen and (max-width: 420px) {
   * {
@@ -479,5 +497,21 @@ main {
   }
   .data-paragraph {
     font-size: 13px;
+  }
+  .btn-wrap {
+    text-align: center;
+    width: 100%;
+    margin: 50px auto;
+  }
+  #btn {
+    border: none;
+    border-radius: 20px;
+    background: #002751;
+    padding: 20px;
+    width: 100px;
+    color: #f4f4f4;
+  }
+  #btn:active {
+    background: #003f82;
   }
 }
