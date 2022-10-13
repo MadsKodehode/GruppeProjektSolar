@@ -389,6 +389,10 @@ main {
     height: 200px;
   }
 
+  #planet-img {
+    width: 300px;
+  }
+
   .desktop-flex {
     display: flex;
     width: 100%;
