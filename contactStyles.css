@@ -42,6 +42,13 @@ main {
   justify-content: center;
 }
 
+.main {
+  display: block;
+  text-align: center;
+  margin: auto;
+  width: 700px;
+}
+
 .content {
   margin-left: -200px;
 }
@@ -115,5 +122,8 @@ footer {
 
 #thank-you {
   font-size: 25px;
-  width: 500px;
+}
+
+#about-astronaut {
+  width: 300px;
 }
