@@ -63,6 +63,8 @@ main {
 }
 
 .hero-img {
+  position: absolute;
+  top: 15px;
 }
 
 .showcase {
