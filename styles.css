@@ -115,6 +115,10 @@ main {
   height: 300px;
 }
 
+#planet-img {
+  width: 550px;
+}
+
 .desktop-flex {
   display: flex;
   width: 100%;
