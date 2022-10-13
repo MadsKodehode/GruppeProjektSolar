@@ -4,283 +4,460 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Solar: Your journey through the solar system</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="index.js" defer></script>
+    <title>SolarSystem</title>
   </head>
   <body>
     <header>
       <nav>
-        <h1>SOLAR</h1>
-        <ul>
-          <li><a href="aboutPage.html">About</a></li>
-          <li><a href="contactPage.html">Contact</a></li>
-        </ul>
+        <div class="header-wrap">
+          <h1 class="logo-txt">Solar</h1>
+          <div class="mobile-menu" onclick="changeFunction()">
+            <div class="menu-bar1"></div>
+            <div class="menu-bar2"></div>
+            <div class="menu-bar3"></div>
+            <div id="nav-wrap">
+              <ul class="nav-menu">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
-      <img id="solar-system-graphic" src="./icons/SolarSystemIcon.png" alt="icon">
+    <main>
+      <section class="hero">
+        <img class="hero-img" src="imgs/HeroDesktop1.svg" />
+      </section>
+    </main>
+
+    <section class="showcase">
+      <div class="showcase-text">
+        <h2>Explore Planets</h2>
+      </div>
       <div class="planet">
-        <div class="main-facts">
-          <img id="Sun" src="./icons/Sun.png" alt="The sun">
-          <p class="planet-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum nibh, dapibus eget risus nec, bibendum elementum elit. Praesent commodo, est vulputate rhoncus aliquet, risus orci dapibus lectus, sed laoreet tellus tortor nec mi. Donec quis efficitur nulla.</p>
+        <div class="desktop-flex">
+          <img
+            class="planet-img"
+            src="imgs/Sun.svg"
+            width="170px"
+            height="auto"
+            alt="vector of the sun"
+          />
+          <div class="fact-text">
+            <h2>The Sun</h2>
+            <p class="planet-facts">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos,
+              pariatur libero nesciunt laboriosam eaque ipsam vitae alias. Odit
+              sequi reprehenderit suscipit velit laboriosam natus nihil,
+              reiciendis, sit, modi optio voluptates.
+            </p>
+          </div>
         </div>
-        <div class="data" id="data-sun">
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+        <div class="data" id="sun">
+          <div class="data-block">
+            <h3 class="data-header">Data 1</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+          <div class="data-block">
+            <h3 class="data-header">Data 2</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+          <div class="data-block">
+            <h3 class="data-header">Data 3</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+          <div class="data-block">
+            <h3 class="data-header">Data 4</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
         </div>
       </div>
       <div class="planet">
-        <div class="main-facts">
-          <p class="planet-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum nibh, dapibus eget risus nec, bibendum elementum elit. Praesent commodo, est vulputate rhoncus aliquet, risus orci dapibus lectus, sed laoreet tellus tortor nec mi. Donec quis efficitur nulla.</p>
-          <img id="Mercury" src="./icons/Mercury.png" alt="Mercury">
-        </div>
-        <div class="data" id="data-mercury">
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
-          </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
-          </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
-          </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+        <div class="desktop-flex-reverse">
+          <img
+            class="planet-img"
+            src="imgs/Mercury.svg"
+            width="170px"
+            height="auto"
+            alt="vector of mercury"
+          />
+          <div class="fact-text">
+            <h2>Mercury</h2>
+            <p class="planet-facts">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos,
+              pariatur libero nesciunt laboriosam eaque ipsam vitae alias. Odit
+              sequi reprehenderit suscipit velit laboriosam natus nihil,
+              reiciendis, sit, modi optio voluptates.
+            </p>
           </div>
         </div>
-      </div>
-      <div class="planet">
-        <div class="main-facts">
-          <p class="planet-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum nibh, dapibus eget risus nec, bibendum elementum elit. Praesent commodo, est vulputate rhoncus aliquet, risus orci dapibus lectus, sed laoreet tellus tortor nec mi. Donec quis efficitur nulla.</p>
-          <img id="Venus" src="./icons/Venus.png" alt="Venus">
-        </div>
-        <div class="data" id="data-venus">
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+        <div class="data" id="mercury">
+          <div class="data-block">
+            <h3 class="data-header">Data 1</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+          <div class="data-block">
+            <h3 class="data-header">Data 2</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+          <div class="data-block">
+            <h3 class="data-header">Data 3</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+          <div class="data-block">
+            <h3 class="data-header">Data 4</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
         </div>
       </div>
       <div class="planet">
-        <div class="main-facts">
-          <img id="Earth" src="./icons/Earth.png" alt="Earth">
-          <p class="planet-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum nibh, dapibus eget risus nec, bibendum elementum elit. Praesent commodo, est vulputate rhoncus aliquet, risus orci dapibus lectus, sed laoreet tellus tortor nec mi. Donec quis efficitur nulla.</p>
-        </div>
-        <div class="data" id="data-earth">
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
-          </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
-          </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
-          </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+        <div class="desktop-flex">
+          <img
+            class="planet-img"
+            src="imgs/Venus.svg"
+            width="170px"
+            height="auto"
+            alt="vector of venus"
+          />
+          <div class="fact-text">
+            <h2>Venus</h2>
+            <p class="planet-facts">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos,
+              pariatur libero nesciunt laboriosam eaque ipsam vitae alias. Odit
+              sequi reprehenderit suscipit velit laboriosam natus nihil,
+              reiciendis, sit, modi optio voluptates.
+            </p>
           </div>
         </div>
-      </div>
-      <div class="planet">
-        <div class="main-facts">
-          <p class="planet-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum nibh, dapibus eget risus nec, bibendum elementum elit. Praesent commodo, est vulputate rhoncus aliquet, risus orci dapibus lectus, sed laoreet tellus tortor nec mi. Donec quis efficitur nulla.</p>
-          <img id="Moon" src="./icons/Moon.png" alt="Moon">
-        </div>
-        <div class="data" id="data-moon">
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+        <div class="data" id="venus">
+          <div class="data-block">
+            <h3 class="data-header">Data 1</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+          <div class="data-block">
+            <h3 class="data-header">Data 2</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+          <div class="data-block">
+            <h3 class="data-header">Data 3</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+          <div class="data-block">
+            <h3 class="data-header">Data 4</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
         </div>
       </div>
       <div class="planet">
-        <div class="main-facts">
-          <img id="Mars" src="./icons/Mars.png" alt="Mars">
-          <p class="planet-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum nibh, dapibus eget risus nec, bibendum elementum elit. Praesent commodo, est vulputate rhoncus aliquet, risus orci dapibus lectus, sed laoreet tellus tortor nec mi. Donec quis efficitur nulla.</p>
-        </div>
-        <div class="data" id="data-mars">
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
-          </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
-          </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
-          </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+        <div class="desktop-flex-reverse">
+          <img
+            class="planet-img"
+            src="imgs/Earth.svg"
+            width="170px"
+            height="auto"
+            alt="vector of earth"
+          />
+          <div class="fact-text">
+            <h2>Earth</h2>
+            <p class="planet-facts">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos,
+              pariatur libero nesciunt laboriosam eaque ipsam vitae alias. Odit
+              sequi reprehenderit suscipit velit laboriosam natus nihil,
+              reiciendis, sit, modi optio voluptates.
+            </p>
           </div>
         </div>
-      </div>
-      <div class="planet">
-        <div class="main-facts">
-          <p class="planet-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum nibh, dapibus eget risus nec, bibendum elementum elit. Praesent commodo, est vulputate rhoncus aliquet, risus orci dapibus lectus, sed laoreet tellus tortor nec mi. Donec quis efficitur nulla.</p>
-          <img id="Jupiter" src="./icons/Jupiter.png" alt="Jupiter">
-        </div>
-        <div class="data" id="data-jupiter">
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+        <div class="data" id="earth">
+          <div class="data-block">
+            <h3 class="data-header">Data 1</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+          <div class="data-block">
+            <h3 class="data-header">Data 2</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+          <div class="data-block">
+            <h3 class="data-header">Data 3</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+          <div class="data-block">
+            <h3 class="data-header">Data 4</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
         </div>
       </div>
       <div class="planet">
-        <div class="main-facts">
-          <img id="Saturn" src="./icons/Saturn.png" alt="Saturn">
-          <p class="planet-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum nibh, dapibus eget risus nec, bibendum elementum elit. Praesent commodo, est vulputate rhoncus aliquet, risus orci dapibus lectus, sed laoreet tellus tortor nec mi. Donec quis efficitur nulla.</p>
-        </div>
-        <div class="data" id="data-saturn">
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
-          </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
-          </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
-          </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+        <div class="desktop-flex">
+          <img
+            class="planet-img"
+            src="imgs/Moon.svg"
+            width="170px"
+            height="auto"
+            alt="vector of moon"
+          />
+          <div class="fact-text">
+            <h2>Moon</h2>
+            <p class="planet-facts">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos,
+              pariatur libero nesciunt laboriosam eaque ipsam vitae alias. Odit
+              sequi reprehenderit suscipit velit laboriosam natus nihil,
+              reiciendis, sit, modi optio voluptates.
+            </p>
           </div>
         </div>
-      </div>
-      <div class="planet">
-        <div class="main-facts">
-          <p class="planet-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum nibh, dapibus eget risus nec, bibendum elementum elit. Praesent commodo, est vulputate rhoncus aliquet, risus orci dapibus lectus, sed laoreet tellus tortor nec mi. Donec quis efficitur nulla.</p>
-          <img id="Uranus" src="./icons/Uranus.png" alt="Uranus">
-        </div>
-        <div class="data" id="data-uranus">
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+        <div class="data" id="moon">
+          <div class="data-block">
+            <h3 class="data-header">Data 1</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+          <div class="data-block">
+            <h3 class="data-header">Data 2</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+          <div class="data-block">
+            <h3 class="data-header">Data 3</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+          <div class="data-block">
+            <h3 class="data-header">Data 4</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
         </div>
       </div>
       <div class="planet">
-        <div class="main-facts">
-          <img id="Neptune" src="./icons/Neptune.png" alt="Neptune">
-          <p class="planet-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum nibh, dapibus eget risus nec, bibendum elementum elit. Praesent commodo, est vulputate rhoncus aliquet, risus orci dapibus lectus, sed laoreet tellus tortor nec mi. Donec quis efficitur nulla.</p>
+        <div class="desktop-flex-reverse">
+          <img
+            class="planet-img"
+            src="imgs/Mars.svg"
+            width="170px"
+            height="auto"
+            alt="vector of mars"
+          />
+          <div class="fact-text">
+            <h2>Mars</h2>
+            <p class="planet-facts">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos,
+              pariatur libero nesciunt laboriosam eaque ipsam vitae alias. Odit
+              sequi reprehenderit suscipit velit laboriosam natus nihil,
+              reiciendis, sit, modi optio voluptates.
+            </p>
+          </div>
         </div>
-        <div class="data" id="data-neptune">
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+        <div class="data" id="mars">
+          <div class="data-block">
+            <h3 class="data-header">Data 1</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+          <div class="data-block">
+            <h3 class="data-header">Data 2</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+          <div class="data-block">
+            <h3 class="data-header">Data 3</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+          <div class="data-block">
+            <h3 class="data-header">Data 4</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
         </div>
       </div>
       <div class="planet">
-        <div class="main-facts">
-          <p class="planet-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum nibh, dapibus eget risus nec, bibendum elementum elit. Praesent commodo, est vulputate rhoncus aliquet, risus orci dapibus lectus, sed laoreet tellus tortor nec mi. Donec quis efficitur nulla.</p>
-          <img id="Pluto" src="./icons/Pluto.png" alt="Pluto">
+        <div class="desktop-flex">
+          <img
+            class="planet-img"
+            src="imgs/Jupiter.svg"
+            width="170px"
+            height="auto"
+            alt="vector of jupiter"
+          />
+          <div class="fact-text">
+            <h2>Jupiter</h2>
+            <p class="planet-facts">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos,
+              pariatur libero nesciunt laboriosam eaque ipsam vitae alias. Odit
+              sequi reprehenderit suscipit velit laboriosam natus nihil,
+              reiciendis, sit, modi optio voluptates.
+            </p>
+          </div>
         </div>
-        <div class="data" id="data-pluto">
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+        <div class="data" id="jupiter">
+          <div class="data-block">
+            <h3 class="data-header">Data 1</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+          <div class="data-block">
+            <h3 class="data-header">Data 2</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+          <div class="data-block">
+            <h3 class="data-header">Data 3</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
-          <div class="fact">
-            <p>Data 1</p>
-            <p>fact</p>
+          <div class="data-block">
+            <h3 class="data-header">Data 4</h3>
+            <p class="data-paragraph">Data Paragraph</p>
           </div>
         </div>
       </div>
+      <div class="planet">
+        <div class="desktop-flex-reverse">
+          <img
+            id="planet-img"
+            src="imgs/Saturn.svg"
+            width="170px"
+            height="auto"
+            alt="vector of saturn"
+          />
+          <div class="fact-text">
+            <h2>Saturn</h2>
+            <p class="planet-facts">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos,
+              pariatur libero nesciunt laboriosam eaque ipsam vitae alias. Odit
+              sequi reprehenderit suscipit velit laboriosam natus nihil,
+              reiciendis, sit, modi optio voluptates.
+            </p>
+          </div>
+        </div>
+        <div class="data" id="saturn">
+          <div class="data-block">
+            <h3 class="data-header">Data 1</h3>
+            <p class="data-paragraph">Data Paragraph</p>
+          </div>
+          <div class="data-block">
+            <h3 class="data-header">Data 2</h3>
+            <p class="data-paragraph">Data Paragraph</p>
+          </div>
+          <div class="data-block">
+            <h3 class="data-header">Data 3</h3>
+            <p class="data-paragraph">Data Paragraph</p>
+          </div>
+          <div class="data-block">
+            <h3 class="data-header">Data 4</h3>
+            <p class="data-paragraph">Data Paragraph</p>
+          </div>
+        </div>
+      </div>
+      <div class="planet">
+        <div class="desktop-flex">
+          <img
+            class="planet-img"
+            src="imgs/Uranus.svg"
+            width="170px"
+            height="auto"
+            alt="vector of uranus"
+          />
+          <div class="fact-text">
+            <h2>Uranus</h2>
+            <p class="planet-facts">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos,
+              pariatur libero nesciunt laboriosam eaque ipsam vitae alias. Odit
+              sequi reprehenderit suscipit velit laboriosam natus nihil,
+              reiciendis, sit, modi optio voluptates.
+            </p>
+          </div>
+        </div>
+        <div class="data" id="uranus">
+          <div class="data-block">
+            <h3 class="data-header">Data 1</h3>
+            <p class="data-paragraph">Data Paragraph</p>
+          </div>
+          <div class="data-block">
+            <h3 class="data-header">Data 2</h3>
+            <p class="data-paragraph">Data Paragraph</p>
+          </div>
+          <div class="data-block">
+            <h3 class="data-header">Data 3</h3>
+            <p class="data-paragraph">Data Paragraph</p>
+          </div>
+          <div class="data-block">
+            <h3 class="data-header">Data 4</h3>
+            <p class="data-paragraph">Data Paragraph</p>
+          </div>
+        </div>
+      </div>
+      <div class="planet">
+        <div class="desktop-flex-reverse">
+          <img
+            class="planet-img"
+            src="imgs/Neptune.svg"
+            width="170px"
+            height="auto"
+            alt="vector of neptune"
+          />
+          <div class="fact-text">
+            <h2>Neptune</h2>
+            <p class="planet-facts">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos,
+              pariatur libero nesciunt laboriosam eaque ipsam vitae alias. Odit
+              sequi reprehenderit suscipit velit laboriosam natus nihil,
+              reiciendis, sit, modi optio voluptates.
+            </p>
+          </div>
+        </div>
+        <div class="data" id="neptune">
+          <div class="data-block">
+            <h3 class="data-header">Data 1</h3>
+            <p class="data-paragraph">Data Paragraph</p>
+          </div>
+          <div class="data-block">
+            <h3 class="data-header">Data 2</h3>
+            <p class="data-paragraph">Data Paragraph</p>
+          </div>
+          <div class="data-block">
+            <h3 class="data-header">Data 3</h3>
+            <p class="data-paragraph">Data Paragraph</p>
+          </div>
+          <div class="data-block">
+            <h3 class="data-header">Data 4</h3>
+            <p class="data-paragraph">Data Paragraph</p>
+          </div>
+        </div>
+      </div>
+      <div class="planet">
+        <div class="desktop-flex">
+          <img
+            class="planet-img"
+            src="imgs/Pluto.svg"
+            width="170px"
+            height="auto"
+            alt="vector of pluto"
+          />
+          <div class="fact-text">
+            <h2>Pluto</h2>
+            <p class="planet-facts">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos,
+              pariatur libero nesciunt laboriosam eaque ipsam vitae alias. Odit
+              sequi reprehenderit suscipit velit laboriosam natus nihil,
+              reiciendis, sit, modi optio voluptates.
+            </p>
+          </div>
+        </div>
+        <div class="data" id="pluto">
+          <div class="data-block">
+            <h3 class="data-header">Data 1</h3>
+            <p class="data-paragraph">Data Paragraph</p>
+          </div>
+          <div class="data-block">
+            <h3 class="data-header">Data 2</h3>
+            <p class="data-paragraph">Data Paragraph</p>
+          </div>
+          <div class="data-block">
+            <h3 class="data-header">Data 3</h3>
+            <p class="data-paragraph">Data Paragraph</p>
+          </div>
+          <div class="data-block">
+            <h3 class="data-header">Data 4</h3>
+            <p class="data-paragraph">Data Paragraph</p>
+          </div>
+        </div>
+      </div>
+      <div class="btn-wrap">
+        <button id="btn" onclick="scrollToTop()">To Top</button>
+      </div>
+    </section>
   </body>
 </html>
