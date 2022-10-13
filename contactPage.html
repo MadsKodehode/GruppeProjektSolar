@@ -12,16 +12,19 @@
       <nav>
         <div class="header-wrap">
           <h1 class="logo-txt"><a href="index.html">SOLAR</a></h1>
-          <ul class="nav-menu">
-            <li><a href="aboutPage.html">About</a></li>
-            <li><a href="contactPage.html">Contact</a></li>
-          </ul>
+          <div id="nav-wrap">
+            <ul class="nav-menu">
+              <li><a href="aboutPage.html">About</a></li>
+              <li><a href="contactPage.html">Contact</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
 
     <main>
       <div class="main-wrap">
+        <div class="mobile-text"><h1>Contact Us</h1></div>
         <div class="content">
           <form>
             <fieldset>
@@ -48,38 +51,56 @@
           <div class="send-content">
             <h1>Contact Us</h1>
             <form action="messageResponse.html">
-              <input type="submit" value="Send Message" id="send-button" />
+              <input type="submit" value="Send Message" id="send-btn" />
             </form>
           </div>
+        </div>
+        <div class="send-mobile">
+          <img src="./icons/Astronaut.svg" id="astronaut" />
+          <form action="messageResponse.html">
+            <input type="submit" value="Send Message" id="send-btn-mobile" />
+          </form>
         </div>
       </div>
     </main>
     <footer>
-      <div class="footer-info">
-        <img id="discord" src="./icons/Discord.svg" />
-        <p><a href="https://discord.gg/SMKJwwUX">Discord</a></p>
-        <p>Server</p>
-        <p>Add us</p>
-        <p>Mads Kodehode #3455</p>
-        <p>Rasmus#9209</p>
-        <p>Bettina#2853</p>
-      </div>
-      <div class="footer-info">
-        <img id="place" src="./icons/Site.svg" />
-        <p>Address</p>
-        <p>Vestre Skostredet 2</p>
-        <p>5017 Bergen</p>
-        <p>Norway</p>
-      </div>
-      <div class="footer-info">
-        <img id="comment" src="./icons/Comment.svg" />
-        <p>Project Manager</p>
-        <p>mads.kodehode@gmail.com</p>
-        <p>Chief Developer</p>
-        <p>rasmus.kodehode@gmail.com</p>
-        <p>Chief Designer</p>
-        <p>bettinakodehode@gmail.com</p>
+      <div class="footer-wrap">
+        <div class="footer-info">
+          <a href="https://discord.gg/SMKJwwUX"
+            ><img id="discord" src="./icons/Discord.svg"
+          /></a>
+          <h2>Discord</h2>
+          <h4>Add us</h4>
+          <p>Rasmus#9209</p>
+          <p>MadsKodehode#3455</p>
+        </div>
+        <div class="footer-info">
+          <a
+            href="https://www.google.com/maps/place/Vestre+Skostredet+2,+5017+Bergen"
+            target="_blank"
+            ><img id="place" src="./icons/Site.svg"
+          /></a>
+          <h2>Address</h2>
+          <p>Vestre Skostredet 2</p>
+          <p>5017 Bergen</p>
+          <p>Norway</p>
+        </div>
+        <div class="footer-info">
+          <a href="https://outlook.live.com/"
+            ><img id="comment" src="./icons/Email.svg"
+          /></a>
+          <h2>Email</h2>
+          <h4>Project Manager</h4>
+          <p>mads.kodehode@gmail.com</p>
+          <h4>Chief Developer</h4>
+          <p>rasmus.kodehode@gmail.com</p>
+        </div>
       </div>
     </footer>
+
+    <script
+      src="https://kit.fontawesome.com/630a321791.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

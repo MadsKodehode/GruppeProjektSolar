@@ -66,6 +66,7 @@ main {
 }
 
 .content {
+  width: 400px;
 }
 
 fieldset {
@@ -105,6 +106,13 @@ textarea {
   display: flex;
   justify-content: center;
 }
+.send-mobile {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
 
 #astronaut {
   width: 400px;
@@ -118,6 +126,7 @@ textarea {
 .send-content {
   text-align: center;
   position: absolute;
+  display: block;
 }
 
 .send-content h1 {
@@ -125,7 +134,7 @@ textarea {
   margin-top: 20px;
 }
 
-#send-button {
+#send-btn {
   margin-top: 100px;
   height: 40px;
   width: 150px;
@@ -133,23 +142,46 @@ textarea {
   color: white;
   border: none;
 }
+#send-btn-mobile {
+  display: none;
+}
 
 footer {
   background-color: #002853;
-  margin-top: 100px;
+  margin-top: 0px;
+  height: 250px;
+}
+
+.footer-wrap {
   display: flex;
-  justify-content: space-between;
-  padding: 20px 150px;
+  justify-content: space-evenly;
+  height: 250px;
 }
 
 .footer-info {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer-info a {
+  cursor: pointer;
+}
+.footer-info p {
+}
+
+.footer-info h4 {
 }
 
 #discord,
 #place,
 #comment {
   width: 50px;
+}
+.mobile-text {
+  margin-bottom: 50px;
+  display: none;
 }
 
 #thank-you {
@@ -158,4 +190,177 @@ footer {
 
 #about-astronaut {
   width: 300px;
+}
+
+@media only screen and (max-width: 420px) {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    background-color: #001d3c;
+    color: white;
+  }
+
+  a {
+    color: white;
+  }
+  header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+
+    top: 0;
+    background-color: #001d3c;
+    z-index: 99;
+  }
+  .header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+  }
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+  }
+  .nav-menu a {
+    border-bottom: 2px solid #f4f4f4;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .nav-menu a:hover {
+    opacity: 0.5;
+  }
+  nav {
+    height: 80px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  main {
+    height: 90vh;
+    width: 100%;
+  }
+  .content {
+    width: 300px;
+  }
+  fieldset {
+    border: 0px;
+  }
+  input[type="text"] {
+    background-color: #001d3c;
+    border: 2px solid #007bff;
+    height: 30px;
+    width: 300px;
+    outline: none;
+    color: #f4f4f4;
+  }
+  textarea {
+    background-color: #001d3c;
+    border: 2px solid #007bff;
+    resize: none;
+    width: 300px;
+    height: 300px;
+    outline: none;
+    color: #f4f4f4;
+  }
+  .main-wrap {
+    width: 90%;
+
+    margin: 400px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+  }
+  .send {
+    display: none;
+    justify-content: center;
+  }
+  .send-mobile {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #astronaut {
+    width: 300px;
+
+    opacity: 0.5;
+  }
+  .astronaut-icon {
+  }
+
+  .send-content {
+    text-align: center;
+    position: absolute;
+    display: none;
+  }
+  .send-content h1 {
+    font-size: 50px;
+    margin-top: 20px;
+  }
+  #send-btn-mobile {
+    margin-top: 80px;
+    height: 40px;
+    width: 150px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    display: block;
+  }
+  footer {
+    background-color: #002853;
+    margin-top: 0px;
+    height: 150px;
+  }
+
+  .footer-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    height: 150px;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .footer-info a {
+    cursor: pointer;
+  }
+
+  .footer-info p {
+    display: none;
+  }
+
+  .footer-info h4 {
+    display: none;
+  }
+
+  #discord,
+  #place,
+  #comment {
+    width: 40px;
+  }
+
+  .mobile-text {
+    margin-bottom: 50px;
+  }
+
+  #thank-you {
+    font-size: 25px;
+    width: 500px;
+  }
 }
