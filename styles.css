@@ -153,6 +153,7 @@ main {
 
 #sun {
   background: #ffdb4e;
+  color: #000;
 }
 
 #mercury {
@@ -164,11 +165,12 @@ main {
 
 #earth {
   background: #00e0ff;
+  color: #000;
 }
 
 #moon {
   background: #ebebeb;
-  color: #595959;
+  color: #000;
 }
 
 #mars {
@@ -177,6 +179,7 @@ main {
 
 #jupiter {
   background: #ffb158;
+  color: #000;
 }
 
 #saturn {
@@ -185,6 +188,7 @@ main {
 
 #uranus {
   background: #00ffbb;
+  color: #000;
 }
 
 #neptune {
@@ -440,7 +444,7 @@ main {
 
   #moon {
     background: #ebebeb;
-    color: #595959;
+    color: #000;
   }
 
   #mars {
