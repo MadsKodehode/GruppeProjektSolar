@@ -340,6 +340,7 @@ main {
     background-repeat: no-repeat;
     position: absolute;
     margin-top: 80px;
+    overflow-x: hidden;
   }
   .hero-img {
     position: absolute;
@@ -371,13 +372,17 @@ main {
     color: #f4f4f4;
   }
 
-.fact {
+  .fact {
     display: block;
     text-shadow: 0px 0px 2px black;
-}
+  }
 
   #planet-img {
     width: 300px;
+  }
+
+  .planet-img {
+    width: 200px;
   }
 
   .desktop-flex {
@@ -398,7 +403,14 @@ main {
     margin-bottom: 50px;
   }
 
-  data {
+  .fact-text {
+    width: 300px;
+    text-align: center;
+    margin: 0;
+    padding: 0px;
+  }
+
+  .data {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -452,9 +464,37 @@ main {
     background: #bfa79a;
   }
 
-#Pluto {
+  #Pluto {
     position: center;
     width: 300px;
     height: 300px;
+  }
+  .data-block {
+    width: 60px;
+  }
+
+  .data-block p {
+    line-height: 10px;
+  }
+
+  .data-header {
+    font-size: 15px;
+  }
+  .data-paragraph {
+    font-size: 10px;
+  }
+  .btn-wrap {
+    text-align: center;
+    width: 100%;
+    margin: 100px auto;
+  }
+  #btn {
+    border: none;
+    border-radius: 20px;
+    background: #002751;
+    padding: 20px;
+    width: 100px;
+    cursor: pointer;
+    color: #f4f4f4;
   }
 }
