@@ -66,6 +66,10 @@ a {
   width: 80%;
 }
 
+.logo-txt {
+  font-size: 30px;
+}
+
 @media (max-width: 420px) {
   * {
     box-sizing: border-box;
